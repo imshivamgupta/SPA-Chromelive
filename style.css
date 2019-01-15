@@ -1,0 +1,105 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html *::before, html *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --gradient-light: linear-gradient(145deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .25));
+  --gradient-dark: linear-gradient(145deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .25));
+  --not-black: #3f4142;
+  --primary: #3f82d7;
+  --success: #28e470;
+  --light: #d3d7e0;
+}
+
+#table-scroll {
+  position: relative;
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+nav.chrome-live {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .6em;
+  background: rgba(101, 137, 173, 0.26);
+  background-image: var(--gradient-dark);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav.chrome-live .logo {
+  width: 200px;
+  height: 50px;
+  background: url("./img/chromelive.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+nav.chrome-live .heading {
+  margin-left: auto;
+  color: var(--light);
+}
+
+nav.chrome-live .heading select#data_type {
+  color: #fff;
+  background-color: transparent;
+  border-color: #a7aaac;
+  -webkit-box-shadow: 0 0 0 0.2rem #475c70;
+          box-shadow: 0 0 0 0.2rem #475c70;
+}
+
+nav.chrome-live .heading select#data_type option {
+  color: #000;
+}
+
+.clone {
+  position: absolute;
+  top: 0;
+  left: 14px;
+  width: 200px;
+  color: #313030;
+  overflow: hidden;
+}
+
+.clone th,
+.clone td {
+  visibility: hidden;
+  border-color: transparent;
+}
+
+.clone tbody th {
+  visibility: visible;
+}
+
+.clone .fixed-side {
+  border: 1px solid #adadad;
+  background: #eee;
+  visibility: visible;
+}
+/*# sourceMappingURL=style.css.map */
